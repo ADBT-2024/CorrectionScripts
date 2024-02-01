@@ -34,7 +34,7 @@
     "test:mongo-local:big": "echo '==========Testing MONGO-LOCAL BIG DATABASE=========='; npm run seed:mongo-local:big; npm run jest",
     "test:mongo-atlas:big": "echo '==========Testing MONGO ATLAS BIG DATABASE=========='; npm run seed:mongo-atlas:big; npm run jest",
     "test:small": "npm run test:sequelize:small; npm run test:mongo-local:small",
-    "test:big": "npm run test:sequelize:big; npm run test:mongo-local:big; npm run test:mongo-atlas:big",
+    "test:big": "npm run test:sequelize:big; npm run test:mongo-local:big",
     "test": "npm run test:big",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
   },
