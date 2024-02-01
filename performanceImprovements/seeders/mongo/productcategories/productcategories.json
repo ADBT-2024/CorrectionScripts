@@ -1,0 +1,41 @@
+[
+    {
+      "_id":  {
+        "$oid": "63f796acebd14a4a64d745d1"
+      },
+      "name": "Starters"
+    },
+    {
+      "_id": {
+        "$oid": "63f796abebd14a4a64d745be"
+      },
+      "name": "Sides"
+    },
+    {
+      "_id": {
+        "$oid": "63f7964e682cae15acbda228"
+      },
+      "name": "Drinks"
+
+    },
+    {
+      "_id": {
+        "$oid": "63f7964b682cae15acbda1fb"
+      },
+      "name": "Main Courses"
+
+    },
+    {
+      "_id": {
+        "$oid": "63f7964a682cae15acbda1e8"
+      },
+      "name": "Desserts"
+
+    },
+    {
+      "_id": {
+        "$oid": "63f795d3dae3fdc89fd39a4b"
+      },
+      "name": "Sandwiches"
+    }
+  ]

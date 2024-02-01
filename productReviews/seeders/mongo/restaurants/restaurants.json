@@ -1,0 +1,422 @@
+[
+    {
+      "_id": {"$oid": "6400897a9262622bea152962"},
+      "name": "Mañana restaurant",
+      "description": "Spanish tapas",
+      "address": "Kurkowa 1, 31-504 Kraków, Poland",
+      "postalCode": " 31-056",
+      "url": "https://goo.gl/maps/GZEfzge4zXz6ySLR8",
+      "shippingCosts": 2.5,
+      "averageServiceMinutes": 0,
+      "email": "mananarestaurant@restaurant.com",
+      "phone": "+48 691 017 476",
+      "logo": "public/restaurants/mañanaRestaurantLogo.png",
+      "heroImage": "public/restaurants/mañanaRestaurantHero.jpeg",
+      "status": "closed",
+      "_restaurantCategoryId": {
+        "$oid": "63f795d2dae3fdc89fd39a41"
+      },
+      "_userId": {"$oid": "63f74bf8eeed64054274b529"},
+      "createdAt": {"$date": "2023-02-20T11:22:05.000Z"},
+      "updatedAt": {"$date": "2023-02-20T11:22:12.000Z"},
+      "products": [
+        {
+          "_id": {
+            "$oid": "640134c59f8c9db5fafe4b05"
+          },
+          "name": "Ensaladilla",
+          "description": "Tuna salad with mayonnaise",
+          "price": 2.5,
+          "image": "public/restaurants/products/ensaladilla.jpeg",
+          "order": 1,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f796acebd14a4a64d745d1"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {
+            "$oid": "640135069f8c9db5fafe4b06"
+          },
+          "name": "Olives",
+          "description": "Home made",
+          "price": 1.5,
+          "image": "public/restaurants/products/aceitunas.jpeg",
+          "order": 2,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f796acebd14a4a64d745d1"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {
+            "$oid": "640135149f8c9db5fafe4b07"
+          },
+          "name": "Coca-cola",
+          "description": "33 cc",
+          "price": 1.5,
+          "image": "public/restaurants/products/cola.jpeg",
+          "order": 3,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f7964e682cae15acbda228"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {
+            "$oid": "640135249f8c9db5fafe4b08"
+          },
+          "name": "Water",
+          "description": "50 cc",
+          "price": 1,
+          "image": "public/restaurants/products/agua.png",
+          "order": 4,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f7964e682cae15acbda228"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {
+            "$oid": "640135329f8c9db5fafe4b09"
+          },
+          "name": "Coffee",
+          "description": "expresso",
+          "price": 1.2,
+          "image": "public/restaurants/products/cafe.jpeg",
+          "order": 5,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f7964e682cae15acbda228"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {
+            "$oid": "640135419f8c9db5fafe4b0a"
+          },
+          "name": "Steak",
+          "description": "Pork",
+          "price": 3.5,
+          "image": "public/restaurants/products/steak.jpeg",
+          "order": 6,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f7964b682cae15acbda1fb"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {
+            "$oid": "6401354e9f8c9db5fafe4b0b"
+          },
+          "name": "Grilled tuna",
+          "description": "with salad",
+          "price": 4.5,
+          "image": "public/restaurants/products/grilledTuna.jpeg",
+          "order": 7,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f7964b682cae15acbda1fb"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {
+            "$oid": "640135599f8c9db5fafe4b0c"
+          },
+          "name": "Mexican burritos",
+          "description": "tomato, chicken, cheese",
+          "price": 4,
+          "image": "public/restaurants/products/burritos.jpeg",
+          "order": 8,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f7964b682cae15acbda1fb"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {
+            "$oid": "640135659f8c9db5fafe4b0d"
+          },
+          "name": "Chocolate cake",
+          "description": "1 piece",
+          "price": 3,
+          "image": "public/restaurants/products/chocolateCake.jpeg",
+          "order": 11,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f7964a682cae15acbda1e8"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {
+            "$oid": "640135709f8c9db5fafe4b0e"
+          },
+          "name": "Apple pie",
+          "description": "1 piece",
+          "price": 3,
+          "image": "public/restaurants/products/applePie.jpeg",
+          "order": 10,
+          "availability": false,
+
+          "_productCategoryId": {"$oid": "63f7964a682cae15acbda1e8"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {
+            "$oid": "6401357b9f8c9db5fafe4b0f"
+          },
+          "name": "Churros",
+          "description": "5 pieces",
+          "price": 2,
+          "image": "public/restaurants/products/churros.jpeg",
+          "order": 9,
+          "availability": false,
+
+          "_productCategoryId": {"$oid": "63f7964a682cae15acbda1e8"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        }
+      ]
+    },
+    {
+      "_id":{
+        "$oid": "640090ba9f8c9db5fafe4aee"
+      },
+      "name": "100 montaditos",
+      "description": "A fun and varied way to enjoy food. A place to share experiences and get carried away by the moment.",
+      "address": "Józefa 34, Kraków, Poland",
+      "postalCode": " 31-056",
+      "url": "http://spain.100montaditos.com/",
+      "shippingCosts": 1.5,
+      "averageServiceMinutes": null,
+      "email": "info@restaurant.com",
+      "phone": "++48123456789",
+      "logo": "public/restaurants/100MontaditosLogo.jpeg",
+      "heroImage": "public/restaurants/100MontaditosHero.jpeg",
+      "status": "online",
+      "_restaurantCategoryId": {
+        "$oid": "63f795cedae3fdc89fd39a39"
+      },
+      "_userId": {"$oid": "63f74bf8eeed64054274b529"},
+      "createdAt": {"$date": "2023-02-20T11:22:05.000Z"},
+      "updatedAt": {"$date": "2023-02-20T11:22:05.000Z"},
+      "products": [
+        {
+          "_id": {"$oid": "641b986dd41960103ff9518f"},
+          "name": "Salchichón",
+          "description": "12 little pieces",
+          "price": 1.5,
+          "image": "public/restaurants/products/salchichon.jpeg",
+          "order": 1,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f796acebd14a4a64d745d1"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id":{"$oid": "641b98abd41960103ff95190"},
+          "name": "Olives",
+          "description": "1 bowl",
+          "price": 1.5,
+          "image": "public/restaurants/products/aceitunas.jpeg",
+          "order": 2,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f796acebd14a4a64d745d1"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {"$oid": "641b98f7d41960103ff95191"},
+          "name": "Coca-cola",
+          "description": "33 cc",
+          "price": 1.5,
+          "image": "public/restaurants/products/cola.jpeg",
+          "order": 3,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f7964e682cae15acbda228"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {"$oid": "641b9923d41960103ff95192"},
+          "name": "Water",
+          "description": "50 cc",
+          "price": 1,
+          "image": "public/restaurants/products/agua.png",
+          "order": 4,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f7964e682cae15acbda228"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {"$oid": "641b9954d41960103ff95193"},
+          "name": "Beer",
+          "description": "20 cc",
+          "price": 1,
+          "image": "public/restaurants/products/cerveza.jpeg",
+          "order": 5,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f7964e682cae15acbda228"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {"$oid": "641b998ed41960103ff95194"},
+          "name": "Jamón",
+          "description": "Cured Jam and olive oil",
+          "price": 1.5,
+          "image": "public/restaurants/products/montaditoJamon.jpeg",
+          "order": 6,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f795d3dae3fdc89fd39a4b"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {"$oid": "641b99b1d41960103ff95195"},
+          "name": "Cheese and tomato",
+          "description": "Iberian cheese and tomato",
+          "price": 1,
+          "image": "public/restaurants/products/montaditoQuesoTomate.jpeg",
+          "order": 7,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f795d3dae3fdc89fd39a4b"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {"$oid": "641b99e5d41960103ff95196"},
+          "name": "Smoked salmon",
+          "description": "Norwegian smoked salmon",
+          "price": 2,
+          "image": "public/restaurants/products/montaditoSalmon.jpeg",
+          "order": 8,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f795d3dae3fdc89fd39a4b"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {"$oid": "641b9a2cd41960103ff95197"},
+          "name": "Chocolate ice-cream",
+          "description": "100 ml",
+          "price": 3,
+          "image": "public/restaurants/products/chocolateIceCream.jpeg",
+          "order": 9,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f7964a682cae15acbda1e8"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {"$oid": "641b9a3ed41960103ff95198"},
+          "name": "Sweet sandwich",
+          "description": "1 piece",
+          "price": 1.5,
+          "image": "public/restaurants/products/montaditoChocolate.png",
+          "order": 10,
+          "availability": true,
+
+          "_productCategoryId": {"$oid": "63f7964a682cae15acbda1e8"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        },
+        {
+          "_id": {"$oid": "641b9a63d41960103ff95199"},
+          "name": "Muffin",
+          "description": "1 piece",
+          "price": 1,
+          "image": "public/restaurants/products/muffin.jpeg",
+          "order": 11,
+          "availability": false,
+
+          "_productCategoryId": {"$oid": "63f7964a682cae15acbda1e8"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "640090f59f8c9db5fafe4af0"
+      },
+      "name": "0 dishes",
+      "description": "0 dishes",
+      "address": "Józefa 34, Kraków, Poland",
+      "postalCode": " 31-056",
+      "url": "http://1000dishes.com/",
+      "shippingCosts": 1.5,
+      "averageServiceMinutes": null,
+      "email": "info@restaurant.com",
+      "phone": "++48123456789",
+      "logo": "",
+      "heroImage": "",
+      "status": "closed",
+      "_restaurantCategoryId": {
+        "$oid": "63f795cedae3fdc89fd39a39"
+      } ,
+      "_userId": {"$oid": "63f74bf8eeed64054274b529"},
+      "createdAt": {"$date": "2023-02-20T11:22:05.000Z"},
+      "updatedAt": {"$date": "2023-02-20T11:22:05.000Z"},
+      "products": []
+    },
+
+    {
+      "_id": {
+        "$oid": "640091729f8c9db5fafe4af5"
+      },
+      "name": "1 producto",
+      "description": "1 producto",
+      "address": "Józefa 34, Kraków, Poland",
+      "postalCode": " 31-056",
+      "url": "http://1000dishes.com/",
+      "shippingCosts": 1.5,
+      "averageServiceMinutes": null,
+      "email": "info@restaurant.com",
+      "phone": "++48123456789",
+      "logo": "",
+      "heroImage": "",
+      "status": "online",
+      "_restaurantCategoryId": {
+        "$oid": "63f795cedae3fdc89fd39a39"
+      } ,
+      "_userId": {"$oid": "63f74bf8eeed64054274b529"},
+      "createdAt": {"$date": "2023-02-20T11:22:05.000Z"},
+      "updatedAt": {"$date": "2023-02-20T11:22:05.000Z"},
+      "products": [
+        {
+          "_id":  {
+            "$oid": "640091729f8c9db5fafe4af6"
+          },
+          "name": "Product #0",
+          "description": "Description #0",
+          "price": 0,
+          "image": "public/restaurants/products/agua.png",
+          "order": 0,
+          "availability": true,
+          "_productCategoryId": {"$oid": "63f7964a682cae15acbda1e8"},
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"}
+        }
+      ]
+    }
+  ]

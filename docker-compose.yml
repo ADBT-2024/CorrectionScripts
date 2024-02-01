@@ -1,0 +1,50 @@
+version: '3'
+services:
+    mongodb:
+      image: mongo:7.0.2
+      ports:
+        - "27017:27017"
+      environment:
+        - MONGO_INITDB_ROOT_USERNAME
+        - MONGO_INITDB_ROOT_PASSWORD
+        - MONGO_INITDB_DATABASE
+        - DATABASE_USERNAME
+        - DATABASE_PASSWORD
+      volumes:
+        - 'deliverusadvanced-mongodb:/data/db'
+        - './init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh'
+      networks:
+        - deliverusadvanced
+
+    mariadb:
+        image: mariadb:11.2
+        command: --default-authentication-plugin=mysql_native_password
+        ports:
+            - '${FORWARD_DB_PORT:-3306}:3306'
+        environment:
+            MYSQL_ROOT_PASSWORD: '${MONGO_INITDB_ROOT_PASSWORD}'
+            MYSQL_ROOT_HOST: '%'
+            MYSQL_DATABASE: '${MONGO_INITDB_DATABASE}'
+            MYSQL_USER: '${DATABASE_USERNAME}'
+            MYSQL_PASSWORD: '${DATABASE_PASSWORD}'
+            MYSQL_ALLOW_EMPTY_PASSWORD: 1
+        volumes:
+            - 'deliverusadvanced-mysql:/var/lib/mysql'
+        networks:
+            - deliverusadvanced
+        healthcheck:
+            test:
+                - CMD
+                - mysqladmin
+                - ping
+                - '-p${DATABASE_PASSWORD}'
+            retries: 3
+            timeout: 5s
+networks:
+  deliverusadvanced:
+        driver: bridge
+volumes:
+  deliverusadvanced-mongodb:
+    driver: local
+  deliverusadvanced-mysql:
+    driver: local

@@ -1,0 +1,14 @@
+[
+    {
+      "_id": {
+        "$oid": "63f795d2dae3fdc89fd39a41"
+      },
+      "name": "Spanish"
+    },
+    {
+      "_id": {
+        "$oid": "63f795cedae3fdc89fd39a39"
+      },
+      "name": "Fast food"
+    }
+  ]

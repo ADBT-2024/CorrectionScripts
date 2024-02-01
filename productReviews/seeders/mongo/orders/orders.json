@@ -1,0 +1,363 @@
+[
+    {
+      "status": "pending",
+      "_id": {
+        "$oid": "6400b9529f8c9db5fafe4afd"
+      },
+      "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+      "startedAt": null,
+      "sentAt": null,
+      "deliveredAt": null,
+      "price": 15,
+      "address": "Fake street 123",
+      "shippingCosts": 0,
+      "_restaurantId": {"$oid": "6400897a9262622bea152962"},
+      "_userId": {"$oid": "63f74bf8eeed64054274b52d"},
+      "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+      "products": [
+        {
+          "_id": {
+            "$oid": "640134c59f8c9db5fafe4b05"
+          },
+          "name": "Ensaladilla",
+          "image": "public/restaurants/products/ensaladilla.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 2,
+          "unityPrice": 2.5
+        },
+        {
+          "_id": {
+            "$oid": "640135419f8c9db5fafe4b0a"
+          },
+          "name": "Steak",
+          "image": "public/restaurants/products/steak.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 2,
+          "unityPrice": 3.5
+        },
+        {
+          "_id": {
+            "$oid": "640135659f8c9db5fafe4b0d"
+          },
+          "name": "Chocolate cake",
+          "image": "public/restaurants/products/chocolateCake.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 1,
+          "unityPrice": 3
+        }
+      ]
+    },
+    {
+      "status": "delivered",
+      "_id": {
+        "$oid": "6400b9629f8c9db5fafe4afe"
+      },
+      "createdAt": {"$date": "2023-02-20T11:20:00.000Z"},
+      "startedAt": {"$date": "2023-02-20T11:25:00.000Z"},
+      "sentAt": {"$date": "2023-02-20T11:30:00.000Z"},
+      "deliveredAt": {"$date": "2023-02-20T11:35:00.000Z"},
+      "price": 19.5,
+      "address": "Fake street 123 modificada",
+      "shippingCosts": 0,
+      "_restaurantId": {"$oid": "6400897a9262622bea152962"},
+      "_userId": {"$oid": "63f74bf8eeed64054274b52d"},
+      "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+      "products": [
+        {
+          "_id": {
+            "$oid": "640134c59f8c9db5fafe4b05"
+          },
+          "name": "Ensaladilla",
+          "image": "public/restaurants/products/ensaladilla.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 3,
+          "unityPrice": 2.5
+        },
+        {
+          "_id": {
+        "$oid": "6401354e9f8c9db5fafe4b0b"
+      },
+          "name": "Grilled tuna",
+          "image": "public/restaurants/products/grilledTuna.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 2,
+          "unityPrice": 4.5
+        },
+        {
+          "_id": 10,
+          "name": "Apple pie",
+          "image": "public/restaurants/products/applePie.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 1,
+          "unityPrice": 3
+        }
+      ]
+    },
+    {
+      "status": "sent",
+      "_id": {
+        "$oid": "6400b9719f8c9db5fafe4aff"
+      },
+      "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+      "startedAt": {"$date": "2023-02-20T11:22:05.000Z"},
+      "sentAt": {"$date": "2023-02-20T11:22:05.000Z"},
+      "deliveredAt": null,
+      "price": 12.5,
+      "address": "Fake street 123",
+      "shippingCosts": 0,
+      "_restaurantId": {"$oid": "6400897a9262622bea152962"},
+      "_userId": {"$oid": "63f74bf8eeed64054274b52d"},
+      "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+      "products": [
+        {
+          "_id": {
+        "$oid": "640134c59f8c9db5fafe4b05"
+      },
+          "name": "Ensaladilla",
+          "image": "public/restaurants/products/ensaladilla.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 1,
+          "unityPrice": 2.5
+        },
+        {
+          "_id": {
+        "$oid": "640135419f8c9db5fafe4b0a"
+      },
+          "name": "Steak",
+          "image": "public/restaurants/products/steak.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 2,
+          "unityPrice": 3.5
+        },
+        {
+          "_id": 10,
+          "name": "Apple pie",
+          "image": "public/restaurants/products/applePie.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 1,
+          "unityPrice": 3
+        }
+      ]
+    },
+    {
+      "status": "in process",
+      "_id": {
+        "$oid": "6400b9819f8c9db5fafe4b00"
+      },
+      "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+      "startedAt": {"$date": "2023-02-20T11:22:05.000Z"},
+      "sentAt": null,
+      "deliveredAt": null,
+      "price": 18,
+      "address": "Fake street 123",
+      "shippingCosts": 0,
+      "_restaurantId": {"$oid": "6400897a9262622bea152962"},
+      "_userId": {"$oid": "63f74bf8eeed64054274b52d"},
+      "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+      "products": [
+        {
+          "_id": {
+        "$oid": "640134c59f8c9db5fafe4b05"
+      },
+          "name": "Ensaladilla",
+          "image": "public/restaurants/products/ensaladilla.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 1,
+          "unityPrice": 2.5
+        },
+        {
+          "_id": {
+        "$oid": "640135419f8c9db5fafe4b0a"
+      },
+          "name": "Steak",
+          "image": "public/restaurants/products/steak.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 2,
+          "unityPrice": 3.5
+        },
+        {
+          "_id": {
+            "$oid": "6401354e9f8c9db5fafe4b0b"
+          },
+          "name": "Grilled tuna",
+          "image": "public/restaurants/products/grilledTuna.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 1,
+          "unityPrice": 4.5
+        },
+        {
+          "_id": {
+            "$oid": "640135599f8c9db5fafe4b0c"
+          },
+          "name": "Mexican burritos",
+          "image": "public/restaurants/products/burritos.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 1,
+          "unityPrice": 4
+        }
+      ]
+    },
+    {
+      "status": "in process",
+      "_id": {
+        "$oid": "6400b9919f8c9db5fafe4b01"
+      },
+      "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+      "startedAt": {"$date": "2023-02-20T11:22:05.000Z"},
+      "sentAt": null,
+      "deliveredAt": null,
+      "price": 6,
+      "address": "Fake street 123",
+      "shippingCosts": 1.5,
+      "_restaurantId": {"$oid": "640090ba9f8c9db5fafe4aee"},
+      "_userId": {"$oid": "63f74bf8eeed64054274b52d"},
+      "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+      "products": [
+        {
+          "_id": {
+            "$oid": "641b986dd41960103ff9518f"
+          },
+          "name": "Salchichón",
+          "image": "public/restaurants/products/salchichon.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 2,
+          "unityPrice": 1.5
+        },
+        {
+          "_id": {
+            "$oid": "641b98f7d41960103ff95191"
+          },
+          "name": "Coca-cola",
+          "image": "public/restaurants/products/cola.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 1,
+          "unityPrice": 1.5
+        }
+      ]
+    },
+    {
+      "status": "delivered",
+      "_id": {
+        "$oid": "6400b99d9f8c9db5fafe4b02"
+      },
+      "createdAt": {"$date": "2023-02-20T11:20:00.000Z"},
+      "startedAt": {"$date": "2023-02-20T11:25:00.000Z"},
+      "sentAt": {"$date": "2023-02-20T11:30:00.000Z"},
+      "deliveredAt": {"$date": "2023-02-20T11:35:00.000Z"},
+      "price": 10.5,
+      "address": "Otra direccion",
+      "shippingCosts": 1.5,
+      "_restaurantId": {"$oid": "640090ba9f8c9db5fafe4aee"},
+      "_userId": {"$oid": "63f74bf8eeed64054274b52d"},
+      "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+      "products": [
+        {
+          "_id": {
+            "$oid": "641b9923d41960103ff95192"
+          },
+          "name": "Water",
+          "image": "public/restaurants/products/agua.png",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 2,
+          "unityPrice": 1
+        },
+        {
+          "_id": {
+            "$oid": "641b9954d41960103ff95193"
+          },
+          "name": "Beer",
+          "image": "public/restaurants/products/cerveza.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 2,
+          "unityPrice": 1
+        },
+        {
+          "_id": {
+            "$oid": "641b998ed41960103ff95194"
+          },
+          "name": "Jamón",
+          "image": "public/restaurants/products/montaditoJamon.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 1,
+          "unityPrice": 1.5
+        },
+        {
+          "_id": {
+            "$oid": "641b99e5d41960103ff95196"
+          },
+          "name": "Smoked salmon",
+          "image": "public/restaurants/products/montaditoSalmon.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 1,
+          "unityPrice": 2
+        },
+        {
+          "_id": {
+            "$oid": "641b9a3ed41960103ff95198"
+          },
+          "image": "public/restaurants/products/montaditoChocolate.png",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 1,
+          "unityPrice": 1.5
+        }
+      ]
+    },
+    {
+      "status": "delivered",
+      "_id": {
+        "$oid": "6400b9ab9f8c9db5fafe4b03"
+      },
+      "createdAt": {"$date": "2023-02-20T11:20:00.000Z"},
+      "startedAt": {"$date": "2023-02-20T11:25:00.000Z"},
+      "sentAt": {"$date": "2023-02-20T11:30:00.000Z"},
+      "deliveredAt": {"$date": "2023-02-20T11:35:00.000Z"},
+      "price": 45,
+      "address": "Edited address",
+      "shippingCosts": 0,
+      "_restaurantId": {"$oid": "6400897a9262622bea152962"},
+      "_userId": {"$oid": "63f74bf8eeed64054274b52d"},
+      "updatedAt": {"$date": "2023-02-20T11:22:19.000Z"},
+      "products": [
+        {
+          "_id": {
+            "$oid": "640134c59f8c9db5fafe4b05"
+          },
+          "name": "Ensaladilla",
+          "image": "public/restaurants/products/ensaladilla.jpeg",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 10,
+          "unityPrice": 2.5
+        },
+        {
+          "_id": {"$oid": "640135249f8c9db5fafe4b08"},
+          "name": "Water",
+          "image": "public/restaurants/products/agua.png",
+          "createdAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "updatedAt": {"$date": "2023-02-20T11:22:04.000Z"},
+          "quantity": 20,
+          "unityPrice": 1
+        }
+      ]
+    }
+  ]
