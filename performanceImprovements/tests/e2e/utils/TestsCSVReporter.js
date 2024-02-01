@@ -38,7 +38,17 @@ class TestsCSVReporter extends BaseReporter {
         duration,
         status
       })
+      // Inicializa failedTests si aún no se ha hecho
+      if (file.failedTests === undefined) {
+        file.failedTests = 0;
+      }
+
+      if (status === 'failed') {
+        file.failedTests += 1;
+      }
     })
+
+
   }
 
   onRunComplete (contexts, results) {
@@ -92,22 +102,25 @@ class TestsCSVReporter extends BaseReporter {
       evaluationData[directoryName][miniprojectName] = {};
     }
 
-    this._testResults.forEach(({ file, test, duration, status }) => {
+    this._testResults.forEach(({ file: fileName, test, duration, status }) => {
       if (!evaluationData[directoryName][miniprojectName][databaseTechnology]) {
-        evaluationData[directoryName][miniprojectName][databaseTechnology] = {technologyDuration: 0};
+        evaluationData[directoryName][miniprojectName][databaseTechnology] = {technologyDuration: 0, totalFailed: 0};
       }
-      if (!evaluationData[directoryName][miniprojectName][databaseTechnology][file]) {
-        evaluationData[directoryName][miniprojectName][databaseTechnology][file] = {fileDuration: 0};
+      if (!evaluationData[directoryName][miniprojectName][databaseTechnology][fileName]) {
+        evaluationData[directoryName][miniprojectName][databaseTechnology][fileName] = {fileDuration: 0, failedTests: 0};
       }
 
-      const correctedDuration = status==='failed'? 180000 : duration
-      //evaluationData[directoryName][miniprojectName][databaseTechnology][file][test] += correctedDuration;
-      evaluationData[directoryName][miniprojectName][databaseTechnology][file]['fileDuration'] += correctedDuration;
+      // Acceder al objeto correcto en _testFiles
+      const fileData = this._testFiles[fileName];
+      const correctedDuration = status === 'failed' ? 180000 : duration;
+
+      evaluationData[directoryName][miniprojectName][databaseTechnology][fileName]['fileDuration'] += correctedDuration;
       evaluationData[directoryName][miniprojectName][databaseTechnology]['technologyDuration'] += correctedDuration;
-      evaluationData[directoryName][miniprojectName]['totalDuration'] += correctedDuration;
 
-      if (!evaluationData[directoryName][miniprojectName][databaseTechnology][file].failedTests) {
-        evaluationData[directoryName][miniprojectName][databaseTechnology][file].failedTests = this._testFiles[file].failedTests;
+      // Actualizar los contadores de tests fallidos
+      if (status === 'failed') {
+        evaluationData[directoryName][miniprojectName][databaseTechnology][fileName]['failedTests'] = fileData.failedTests;
+        evaluationData[directoryName][miniprojectName][databaseTechnology]['totalFailed'] += 1;
       }
     })
 
