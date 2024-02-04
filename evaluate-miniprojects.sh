@@ -1,6 +1,9 @@
 #!/bin/bash
-cp .env.docker .env
-docker compose up -d
+# Limpiar el entorno
+docker stop $(docker ps -aq) || true
+docker rm $(docker ps -aq) || true
+docker volume prune -f
+
 cd students-projects
 
 # Obtener directorios que contienen package.json
@@ -27,6 +30,13 @@ for dir in $dirs; do
       git checkout -f $miniproject
       mv package.json package-student.json
       # Copiar ficheros y carpeta
+
+      #Iniciar entorno docker
+      cp -f ../../.env.docker .env
+      cp -f ../../docker-compose.yml .
+      cp ../../init-mongo.sh .
+      docker compose up -d
+
       cp ../../$miniproject/.env.mongo.local .
       cp ../../$miniproject/.env.mongo.atlas .
       cp ../../$miniproject/.env.sequelize .
@@ -54,8 +64,29 @@ for dir in $dirs; do
       npm run test
       npx sequelize-cli db:migrate:undo:all
       rm -rf ./node_modules
+
+      #Limpiar el entorno docker
+      # cp -f ../../.env.docker .env
+      # cp -f ../../docker-compose.yml .
+      # docker compose down -v
+      # docker network prune -f
+      # docker stop $(docker ps -aq)
+      # docker rm $(docker ps -aq)
+      # docker volume rm $(docker volume ls -q)
+      # docker stop $(docker ps -aq) || true
+      # docker rm $(docker ps -aq) || true
+      # docker volume prune -f
+      docker stop $(docker ps -aq) || true
+      docker rm $(docker ps -aq) || true
+      docker volume prune -f
+      docker network ls --filter type=custom -q | xargs -r docker network rm
+
+
+      rm .env
     done
   fi
 
   cd ..
+  pwd
+
 done
