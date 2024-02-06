@@ -2,7 +2,10 @@ const fs = require('fs');
 const path = require('path');
 
 // Reemplaza 'tuArchivo.json' con la ruta real de tu archivo JSON
-const filePath = path.join(__dirname, 'evaluation-test.json');
+const fileName = 'student-evaluation-first-iteration.json';
+const normalizedFileName = 'normalized-evaluation-test.json';
+const normalizedFilePath = path.join(__dirname, normalizedFileName);
+const filePath = path.join(__dirname, fileName);
 
 // Leer el archivo JSON
 let data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -65,5 +68,5 @@ normalizeScores(data);
 recalculateFinalScores(data);
 
 // Escribe los cambios en el archivo JSON
-fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
+fs.writeFileSync(normalizedFilePath, JSON.stringify(data, null, 2), 'utf8');
 console.log('Normalization and recalculation completed, original scores preserved.');
