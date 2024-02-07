@@ -12,7 +12,10 @@ echo "Found directories:\n$dirs"
 
 # Definir los valores posibles para miniproject
 miniprojects=("productReviews" "advancedQueries" "performanceImprovements")
+#miniprojects=("productReviews")
+#miniprojects=("advancedQueries")
 #miniprojects=("performanceImprovements")
+
 
 
 # Iterar por cada directorio
@@ -66,16 +69,6 @@ for dir in $dirs; do
       rm -rf ./node_modules
 
       #Limpiar el entorno docker
-      # cp -f ../../.env.docker .env
-      # cp -f ../../docker-compose.yml .
-      # docker compose down -v
-      # docker network prune -f
-      # docker stop $(docker ps -aq)
-      # docker rm $(docker ps -aq)
-      # docker volume rm $(docker volume ls -q)
-      # docker stop $(docker ps -aq) || true
-      # docker rm $(docker ps -aq) || true
-      # docker volume prune -f
       docker stop $(docker ps -aq) || true
       docker rm $(docker ps -aq) || true
       docker volume prune -f
